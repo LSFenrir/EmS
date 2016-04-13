@@ -1,6 +1,22 @@
 div {
 }
 
+.navbar-brand{
+
+    padding:5px;
+    margin-right:20px;
+}
+.navbar
+{
+    margin:0px;
+    position: absolute;
+}
+.navbar-collapse{
+
+    background-color: #EEE;
+    border-width: 0px;
+}
+
 /* BREAKPOINTS */
 
 /* Iphone vertikal */
@@ -10,7 +26,7 @@ nav{
     position: absolute;
     width: 100%;
     z-index: 20;
-    background-color: #2aabd2;
+    background-color: #fff;
 }
 div.content{
     z-index: 10;
@@ -26,6 +42,8 @@ div.map{
     height:100%;
 }
 div.control{
+
+    padding: 20px;
     z-index: 19;
     position: absolute;
     width: 100%;
@@ -39,7 +57,7 @@ div.control{
     nav {
         height: 50px;
         position: absolute;
-        width: 200px;
+        width: 225px;
     }
 
     div.content {
@@ -57,7 +75,7 @@ div.control{
 
     div.control {
         position: absolute;
-        width: 200px;
+        width: 225px;
         height: 100px;
         top: 50px;
     }
@@ -181,6 +199,6 @@ div.control{
         width: 20%;
         height: 100%;
         right:0px;
-        padding-top: 50px;
+        padding-top: 70px;
     }
 }
