@@ -20,3 +20,13 @@ function alterMap(la,ln){
     map.panTo({lat:la,lng:ln});
 
 }
+
+function geb( G)
+{
+    $(".active").removeClass("active");
+    $("."+G).addClass("active");
+}
+
+
+
+    
