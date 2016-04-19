@@ -14,8 +14,8 @@ function initMap() {
 
     });
 }
-var len = [49.122631,49.122631,49.122631,49.122631,49.122631,49.122631,49.122631,49.122631,49.122631]
-var lat = [9.206131,9.206131,9.206131,9.206131,9.206131,9.206131,9.206131,9.206131,9.206131]
+var lat = [49.122210,49.122112,49.122664,49.122307,49.122962,49.122916,49.123055,49.125037,49.122631]
+var len = [9.211107,9.210634,9.210194,9.212023,9.211238,9.211826,9.210388,9.204143,9.206131]
 
 
 function alterMap(la,ln){
@@ -31,17 +31,36 @@ function geb( G)
     $(".active").removeClass("active");
     $("."+G).addClass("active");
 
-    map.panTo({lat:lat[G-1],lng:ln[G-1]});
+    map.panTo({lat:lat[G-1],lng:len[G-1]});
 
 }
 
-function test()
+function button_close()
 {
-    $('#control').toggleClass('control_open control_close');
-    $('.cclose , .copen').toggleClass('cclose copen');
 
+    $('div.control_big').fadeOut(200,'swing', function(){
+        $(this).attr('display','none');
+        $('div.control_small').attr('display','block').fadeIn(200,'swing')
+    });
+
+}
+function button_click(val)
+{
+
+    geb(val);
+    button_close();
+
+}
+function button_open()
+{
+
+    $('div.control_small').fadeOut(200,'swing', function(){
+        $(this).attr('display','none');
+        $('div.control_big').attr('display','block').fadeIn(200,'swing')
+    });
 
 }
 
 
-    
+
+    9.211107,9.210634,9.210194,9.212023,9.211238,9.211826,9.210388,9.204143,9.206131
