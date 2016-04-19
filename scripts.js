@@ -14,10 +14,15 @@ function initMap() {
 
     });
 }
+var len = [49.122631,49.122631,49.122631,49.122631,49.122631,49.122631,49.122631,49.122631,49.122631]
+var lat = [9.206131,9.206131,9.206131,9.206131,9.206131,9.206131,9.206131,9.206131,9.206131]
+
 
 function alterMap(la,ln){
 
-    map.panTo({lat:la,lng:ln});
+    map.setZoom(15);
+    /*map.panTo({lat:la,lng:ln});*/
+    //map.setZoom(24);
 
 }
 
@@ -25,6 +30,9 @@ function geb( G)
 {
     $(".active").removeClass("active");
     $("."+G).addClass("active");
+
+    map.panTo({lat:lat[G-1],lng:ln[G-1]});
+
 }
 
 
