@@ -35,6 +35,13 @@ function geb( G)
 
 }
 
+function test()
+{
+    $('#control').toggleClass('control_open control_close');
+    $('.cclose , .copen').toggleClass('cclose copen');
+
+
+}
 
 
     

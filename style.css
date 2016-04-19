@@ -41,7 +41,17 @@ div.map{
 div.control{
     z-index:19;
     background-color: white;
+    height: 100%;
+    width: 100px;
+    right:0px;
 
+}
+
+.copen{
+
+}
+.cclose{
+    display: none;
 }
 
 /* BREAKPOINTS */
@@ -50,7 +60,7 @@ div.control{
 
 @media (max-width: 479px) {
     nav {
-
+        width:100%;
     }
 
     div.content {
@@ -60,8 +70,28 @@ div.control{
     div.map {
 
     }
-
     div.control {
+        position: absolute;
+        left:0px;
+        bottom:0px;
+        background-color: transparent;
+    }
+    div.control_close {
+        width:60px;
+        height:60px;
+    }
+    div.control_open {
+        width:190px;
+        height:190px;
+    }
+
+    Button.Button{
+        z-index: 18;
+        position: relative;
+        margin:5px;
+        height:50px;
+        width:50px;
+        color:red;
     }
 
 }
