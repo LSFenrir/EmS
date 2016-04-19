@@ -10,6 +10,11 @@ function initMap() {
         center: {lat: 49.122631, lng: 9.206131},
         zoom:24,
         tilt:0,
+        zoomControl:false,
+        mapTypeControl:false,
+        scaleControl: false,
+        streetViewControl:false,
+        rotateControl:false,
         mapTypeId: google.maps.MapTypeId.SATELLITE
 
     });
@@ -44,9 +49,10 @@ function button_close()
     });
 
 }
-function button_click(val)
+function button_click(val,obj)
 {
-
+    text = $(obj).text();
+    $('div.control_small button').text(text);
     geb(val);
     button_close();
 
@@ -60,7 +66,3 @@ function button_open()
     });
 
 }
-
-
-
-    9.211107,9.210634,9.210194,9.212023,9.211238,9.211826,9.210388,9.204143,9.206131
