@@ -7,8 +7,8 @@ var map;
 function initMap() {
     var mapDiv = document.getElementById('map');
     map = new google.maps.Map(mapDiv, {
-        center: {lat: 49.122631, lng: 9.206131},
-        zoom:24,
+        center: {lat: 49.122631, lng: 9.209131},
+        zoom:18,
         tilt:0,
         zoomControl:false,
         mapTypeControl:false,
@@ -36,6 +36,7 @@ function geb( G)
     $(".active").removeClass("active");
     $("."+G).addClass("active");
 
+    map.setZoom(22);
     map.panTo({lat:lat[G-1],lng:len[G-1]});
 
 }
