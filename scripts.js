@@ -25,10 +25,6 @@ var len = [9.211107,9.210634,9.210194,9.212023,9.211238,9.211826,9.210388,9.2041
 
 function alterMap(la,ln){
 
-    map.setZoom(15);
-    /*map.panTo({lat:la,lng:ln});*/
-    //map.setZoom(24);
-
 }
 
 function geb( G)
@@ -36,7 +32,7 @@ function geb( G)
     $(".active").removeClass("active");
     $("."+G).addClass("active");
 
-    map.setZoom(22);
+    map.setZoom(19);
     map.panTo({lat:lat[G-1],lng:len[G-1]});
 
 }

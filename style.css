@@ -17,13 +17,55 @@ html{
 
     border-width: 0px;
 }
+.navbar-nav{
+    float:right;
+}
+.container{
+
+    margin-right:0px;
+}
 /*Content */
 /*Breakübergreifende Formatierung */
 
-nav {
+#nav {
+    width:200px;
+    padding-left: 10px;
+    padding-right: 10px;
+    right:0;
     z-index: 20;
     position: absolute;
-    background-color: white;
+    border:none;
+
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0+0,1+33,1+100 */
+    background: -moz-linear-gradient(left,  rgba(255,255,255,0) 0%, rgba(255,255,255,1) 33%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 33%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 33%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
+}
+#nav a{
+
+    background: transparent;
+    color:black;
+}
+#nav li{
+
+    text-align: right;
+
+}
+
+div.logo{
+    z-index: 21;
+    width:200px;
+    position: absolute;
+    left:0;
+    top:0;
+
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&1+0,1+75,0+100 */
+    background: -moz-linear-gradient(left,  rgba(255,255,255,1) 0%, rgba(255,255,255,1) 75%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 75%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 75%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 */
+
 }
 div.content{
     z-index:10;
@@ -58,9 +100,10 @@ div.control{
 
 /* Iphone vertikal */
 
-@media (max-width: 2000px) {
-    nav {
+@media (max-width: 320px) {
+    #nav {
         width:100%;
+        background-color: white;
     }
 
     div.content {
@@ -147,7 +190,10 @@ div.control{
 /* Ipad vertikal */
 @media (min-width: 768px) and (max-width: 1023px) {
 
-    nav {
+    #nav {
+
+        width:100%;
+        background: #fff;
 
     }
 
@@ -167,7 +213,10 @@ div.control{
 /* Ipad horizontal */
 @media (min-width: 1024px) and (max-width: 1199px) {
 
-    nav {
+    #nav {
+
+        width:100%;
+        background-color: white;
 
     }
 
@@ -186,7 +235,10 @@ div.control{
 /* Laptop */
 @media (min-width: 1200px) {
 
-    nav {
+    #nav {
+
+        width:100%;
+        background-color: #fff;
 
     }
 
