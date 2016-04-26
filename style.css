@@ -1,134 +1,135 @@
-html{
+/**
+Gruppe 03. Mitglieder: Robin Holzwarth, Jerome Tagliaferri, Maren Sudahl, Philipp Rohierse, Franziska Plachetka
+ */
+
+
+/* Customizing of the included bootstrap classes */
+html {
     background-color: #9B9D9F;
     border-color: #E0003C;
 }
 
-.navbar-brand{
-
-    padding:5px;
-    margin-right:20px;
+.navbar-brand {
+    padding: 5px;
+    margin-right: 20px;
 }
-.navbar
-{
-    margin:0px;
+
+.navbar {
+    margin: 0px;
     position: absolute;
 }
-.navbar-collapse{
 
+.navbar-collapse {
     border-width: 0px;
 }
-.navbar-nav{
-    float:right;
-}
-.container{
 
-    margin-right:0px;
+.navbar-nav {
+    float: right;
 }
-/*Content */
-/*Breakübergreifende Formatierung */
 
+.container {
+    margin-right: 0px;
+}
+
+/* Breakpoint independent formating */
 #nav {
-    width:200px;
+    width: 200px;
     padding-left: 10px;
     padding-right: 10px;
-    right:0;
+    right: 0;
     z-index: 20;
     position: absolute;
-    border:none;
+    border: none;
 
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0+0,1+33,1+100 */
-    background: -moz-linear-gradient(left,  rgba(255,255,255,0) 0%, rgba(255,255,255,1) 33%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 33%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 33%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
+    background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 33%, rgba(255, 255, 255, 1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 33%, rgba(255, 255, 255, 1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 33%, rgba(255, 255, 255, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#ffffff', GradientType=1); /* IE6-9 */
 }
-#nav a{
 
+#nav a {
     background: transparent;
-    color:black;
+    color: black;
 }
-#nav li{
 
+#nav li {
     text-align: right;
-
 }
 
-div.logo{
+div.logo {
     z-index: 21;
-    width:200px;
+    width: 200px;
     position: absolute;
-    left:0;
-    top:0;
+    left: 0;
+    top: 0;
 
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&1+0,1+75,0+100 */
-    background: -moz-linear-gradient(left,  rgba(255,255,255,1) 0%, rgba(255,255,255,1) 75%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(left,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 75%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 75%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 */
+    background: -moz-linear-gradient(left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 75%, rgba(255, 255, 255, 0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 75%, rgba(255, 255, 255, 0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 75%, rgba(255, 255, 255, 0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#00ffffff', GradientType=1); /* IE6-9 */
 
 }
-div.content{
-    z-index:10;
+
+/* general configuration of the 4 primary objects */
+div.content {
+    z-index: 10;
     height: 100%;
     width: 100%;
     position: absolute;
 }
-div.map{
 
+div.map {
     position: relative;
-    width:100%;
-    height:100%;
-
+    width: 100%;
+    height: 100%;
 }
-div.control{
-    z-index:19;
+
+div.control {
+    z-index: 19;
     position: absolute;
-    left:0;
-    bottom:0;
+    left: 0;
+    bottom: 0;
     background-color: transparent;
-
 }
 
+/*opened buttonmatrix*/
 div.control_big {
-    width:180px;
-    height:180px;
+    width: 180px;
+    height: 180px;
     display: none;
 }
+
+/*closed buttonmatrix*/
 div.control_small {
-    width:60px;
-    height:60px;
+    width: 60px;
+    height: 60px;
     display: block;
 }
 
-div.control Button{
+/* buttons */
+div.control Button {
     z-index: 18;
     position: relative;
-    margin:5px;
-    padding:5px;
-    height:50px;
-    width:50px;
-    color:red;
-    float:left;
+    margin: 5px;
+    padding: 5px;
+    height: 50px;
+    width: 50px;
+    color: red;
+    float: left;
     font-size: 30px;
     text-align: center;
     text-shadow: 0px 0px 1px #FFF, -1px 1px 1px #000;
 }
 
-
-.copen{
-
-}
-.cclose{
-    display: none;
-}
-
 /* BREAKPOINTS */
 
-/* Iphone vertikal */
+/* Iphone vertical */
 
 @media (max-width: 320px) {
     #nav {
-        width:100%;
+        width: 100%;
         background-color: white;
     }
 
@@ -141,7 +142,6 @@ div.control Button{
     }
 
 }
-
 
 /* Iphone horizontal */
 @media (min-width: 480px) and (max-width: 648px) {
@@ -158,7 +158,8 @@ div.control Button{
 
     }
 }
-/* kleines Tablet horizontal */
+
+/* small tablet horizontal */
 @media (min-width: 649px) and (max-width: 767px) {
 
     nav {
@@ -178,12 +179,13 @@ div.control Button{
     }
 
 }
-/* Ipad vertikal */
+
+/* Ipad vertical */
 @media (min-width: 768px) and (max-width: 1023px) {
 
     #nav {
 
-        width:100%;
+        width: 100%;
         background: #fff;
 
     }
@@ -201,12 +203,13 @@ div.control Button{
     }
 
 }
+
 /* Ipad horizontal */
 @media (min-width: 1024px) and (max-width: 1199px) {
 
     #nav {
 
-        width:100%;
+        width: 100%;
         background-color: white;
 
     }
@@ -223,12 +226,13 @@ div.control Button{
     }
 
 }
-/* Laptop */
+
+/* laptop */
 @media (min-width: 1200px) {
 
     #nav {
 
-        width:100%;
+        width: 100%;
         background-color: #fff;
 
     }

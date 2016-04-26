@@ -1,8 +1,10 @@
 /**
- * Created by Robin Holzwarth on 13.04.2016.
+Gruppe 03. Mitglieder: Robin Holzwarth, Jerome Tagliaferri, Maren Sudahl, Philipp Rohierse, Franziska Plachetka
  */
 
 var map;
+
+//map object is created. zoom onto the full buildingcomplex
 
 function initMap() {
     var mapDiv = document.getElementById('map');
@@ -19,13 +21,14 @@ function initMap() {
 
     });
 }
+
+//array with coordinates of each building
+
 var lat = [49.122210, 49.122112, 49.122664, 49.122307, 49.122962, 49.122916, 49.123055, 49.125037, 49.122631]
 var len = [9.211107, 9.210634, 9.210194, 9.212023, 9.211238, 9.211826, 9.210388, 9.204143, 9.206131]
 
 
-function alterMap(la, ln) {
-
-}
+//zoom onto building
 
 function geb(G) {
     $(".active").removeClass("active");
@@ -38,6 +41,8 @@ function geb(G) {
 
 }
 
+//close button array
+
 function button_close() {
 
     $('div.control_big').fadeOut(200, 'swing', function () {
@@ -45,6 +50,8 @@ function button_close() {
         $('div.control_small').attr('display', 'block').fadeIn(200, 'swing')
     });
 
+//click on one of the building buttons    
+    
 }
 function button_click(val, obj) {
     text = $(obj).text();
@@ -53,6 +60,9 @@ function button_click(val, obj) {
     button_close();
 
 }
+
+//open button array
+
 function button_open() {
 
     $('div.control_small').fadeOut(200, 'swing', function () {
@@ -61,6 +71,8 @@ function button_open() {
     });
 
 }
+
+//get zoom factor
 
 function zoom() {
     var breite = $('body').width();
